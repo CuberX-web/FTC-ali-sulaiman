@@ -1,0 +1,46 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import java.util.Scanner;
+
+public class MathQuiz {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        // MCQ answers
+        int a = 384;
+        int b = 345;
+        int c = 6754;
+        int d = 285;
+        
+        // Scores (though not used in this example, you can implement them if needed)
+        int A = 100;
+        int B = 83;
+        int C = 76;
+        int D = 66;
+        int F = 50;
+
+        // Display the question
+        System.out.println("A. What is 32 x 12?");
+        System.out.println("1) " + a);
+        System.out.println("2) " + b);
+        System.out.println("3) " + c);
+        System.out.println("4) " + d);
+        System.out.print("Enter the number of your choice: ");
+        
+        // Get user's guess
+        int guess = scan.nextInt();
+
+        // Check the answer
+        if (guess == 1) {
+            System.out.println("Correct!");
+        } else if (guess == 2 || guess == 3 || guess == 4) {
+            System.out.println("False!");
+        } else {
+            System.out.println("Invalid choice!");
+        }
+
+        // Close the scanner
+        scan.close();
+    }
+}
