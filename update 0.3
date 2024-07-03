@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class MathQuiz {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        // Questions and answers
+        String[] questions = {
+            "What is 32 x 12?",
+            "What is 15 + 27?",
+            "What is 45 / 5?",
+            "What is 9 - 3?",
+            "What is 6 * 7?"
+        };
+
+        int[][] options = {
+            {384, 345, 6754, 285},
+            {42, 52, 62, 72},
+            {8, 9, 7, 6},
+            {5, 6, 7, 8},
+            {42, 32, 22, 12}
+        };
+
+        int[] correctAnswers = {1, 2, 3, 1, 1};
+
+        int score = 0;
+
+        // Loop through each question
+        for (int i = 0; i < questions.length; i++) {
+            System.out.println("Q" + (i + 1) + ". " + questions[i]);
+            System.out.println("1) " + options[i][0]);
+            System.out.println("2) " + options[i][1]);
+            System.out.println("3) " + options[i][2]);
+            System.out.println("4) " + options[i][3]);
+            System.out.print("Enter the number of your choice: ");
+            
+            // Get user's guess
+            int guess = scan.nextInt();
+
+            // Check the answer
+            if (guess == correctAnswers[i]) {
+                System.out.println("Correct!");
+                score++;
+            } else {
+                System.out.println("False!");
+            }
+        }
+
+        // Display the final score
+        System.out.println("Your final score is: " + score + " out of " + questions.length);
+
+        // Close the scanner
+        scan.close();
+    }
+}
