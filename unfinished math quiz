@@ -1,0 +1,35 @@
+{
+    public static void main(String[] args) {
+       
+       //scores
+       
+       int A = 100;
+       int B = 83;
+       int c = 76;
+       int d = 66;
+       int F = 50;
+       
+       int guess = 0;
+       
+       // MCQ answers
+       
+     int a = 384;
+     int b = 345;
+     int c = 6754;
+     int d = 285;
+        
+        System.out.println("A. what is 32x12?");
+               guess = scan.nextInt();
+
+        if (int a) {
+           
+       System.out.println("correct!");
+       
+        }
+        else (int b, int c, int d) {
+                   System.out.println("false!");
+
+        }
+
+    }
+}
