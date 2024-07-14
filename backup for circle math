@@ -9,8 +9,9 @@ class HelloWorld {
         int rad = scan.nextInt();
     
         printRadius(rad);
-        printDiameter(diameter);
-     
+        printDiameter(rad);
+        printArea(rad);
+        printCircumference(rad);
     }
     
     public static void printRadius(int radius){
@@ -19,10 +20,21 @@ class HelloWorld {
     
         public static void printDiameter(int radius){
             int diameter = radius * 2;
-            System.out.println(diameter);
+            System.out.println("The diameter is: " + diameter);
             
-        
             
         }
-    
+    public static void printArea(int radius){
+        double area = radius * radius * 3.14;
+       System.out.println("The area is: " + area);
+
+        
+    }
+        public static void printCircumference(int radius){
+        double circumference = radius * 2 * 3.14;
+        System.out.println("The Circumference is: " + circumference);
+        }
+
+
+
 }
