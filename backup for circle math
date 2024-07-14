@@ -1,0 +1,24 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter radius: ");
+        
+        int rad = scan.nextInt();
+    
+        printRadius(rad);
+     
+    }
+    
+    public static void printRadius(int radius){
+        System.out.println("The radius is " + radius);
+    }
+    
+        public static void printDiameter(2 * int rad){
+            
+            
+        }
+    
+}
