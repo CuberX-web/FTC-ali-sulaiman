@@ -9,6 +9,7 @@ class HelloWorld {
         int rad = scan.nextInt();
     
         printRadius(rad);
+        printDiameter(diameter);
      
     }
     
@@ -16,8 +17,11 @@ class HelloWorld {
         System.out.println("The radius is " + radius);
     }
     
-        public static void printDiameter(2 * int rad){
+        public static void printDiameter(int radius){
+            int diameter = radius * 2;
+            System.out.println(diameter);
             
+        
             
         }
     
