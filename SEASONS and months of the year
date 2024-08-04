@@ -1,0 +1,50 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Enter the number of month: ");
+       int month = scan.nextInt();
+       System.out.println(nameOfSeason(month));
+    }
+    public static String nameOfSeason(int month){
+        if (month == 1){
+            return "January, winter season.";
+        }
+        else if (month == 2){
+            return "February, winter season." ;
+        }
+         else if (month == 3){
+            return "March, spring season.";
+        }
+        else if (month == 4){
+            return "April, spring season.";
+        }
+        else if (month == 5){
+            return "May, spring season.";
+        }
+        else if (month == 6){
+            return "June, summer season.";
+        }
+        else if (month == 7){
+            return "July, summer season.";
+        }
+        else if (month == 8){
+            return "August, summer season.";
+        }
+        else if (month == 9){
+            return "September, Fall season.";
+        }
+        else if (month == 10){
+            return "October, Fall season.";
+        }
+        else if (month == 11){
+            return "November Fall season.";
+        }
+        else {
+            return "December, Winter season.";
+        }
+        
+    }
+}
