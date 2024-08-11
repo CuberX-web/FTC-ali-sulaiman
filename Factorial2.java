@@ -6,13 +6,14 @@ class HelloWorld {
     public static void main(String[] args) {
        Scanner scan = new Scanner(System.in);
            while(true) {
-       System.out.println(" Enter a number(press 0 to quit): ");
+       System.out.println(" Enter a number(press anything less than 0 to quit): ");
        
       int num = scan.nextInt();
-      System.out.println(factorial(num));
-      if (num == 0){
+      if (num < 0 ){
              break;
          }
+      System.out.println(factorial(num));
+      
        }
     }
         public static int factorial(int number){
@@ -21,7 +22,13 @@ class HelloWorld {
             for (int i = 1; i <= number; i++) {
            total = total * i;
             }
+            
+            if (number <0){
+  
+                System.out.println ("Invalid number");
+            }
             return total;
         }
-    }
+     }
+
        
