@@ -5,13 +5,16 @@ import java.util.Scanner;
 class HelloWorld {
     public static void main(String[] args) {
        Scanner scan = new Scanner(System.in);
-           
-       System.out.println(" Enter a number: ");
+           while(true) {
+       System.out.println(" Enter a number(press 0 to quit): ");
        
       int num = scan.nextInt();
       System.out.println(factorial(num));
-      
+      if (num == 0){
+             break;
+         }
        }
+    }
         public static int factorial(int number){
             int total = 1; 
             
